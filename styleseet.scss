@@ -31,9 +31,9 @@ body {
   background-color: black;
   z-index: 3;
   color: white;
-  width: 1250px;
-  min-height: 100vh;
-  margin: 0 auto;
+  width: 1350px;
+  height: 100vh;
+  margin-left: 130px ;
 }
 
 .mobile-btn {
@@ -56,7 +56,7 @@ body {
 }
 
 header {
-  width: 940px;
+  width: 1010px;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -67,7 +67,7 @@ header {
 }
 
 header h2 {
-  width: 630px;
+  width: 820px;
   margin-top: 15px;
   margin-left: 8px;
 }
@@ -78,7 +78,7 @@ header h2:hover {
 
 header .search {
   margin-left: 30px;
-  width: 330px;
+  width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,10 +143,10 @@ header .search .search-box {
 }
 
 .side-nav {
-  position: fixed;
-  z-index: 0;
+  overflow-y: auto;
   padding-top: 10px;
-  width: 220px;
+  width: 270px;
+  height: 100vh;
   border-right: solid 2px #161616;
 }
 
@@ -187,13 +187,22 @@ header .search .search-box {
 }
 
 main {
-  width: 830px;
+  width: 860px;
+  height: 100vh;
   padding-top: 36px;
-  margin-left: 226px;
+  margin-left: 40px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 main:hover {
   background-color: #070707;
+}
+
+.main-scroll,.aside-scroll{
+  width: calc(100% + 17px);
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .tw-items i {
@@ -213,8 +222,12 @@ main:hover {
 }
 
 aside {
-  width: 330px;
+  width: 380px;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
   padding-top: 80px;
+  background-color: darksalmon;
 }
 
 aside h2 {
