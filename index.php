@@ -58,7 +58,6 @@
     </div>
     </header>
     <!--ヘッダー終了!-->
-
 <!--フォーム開始!-->
     <form action="index.php" method="post">
 <!--モーダル開始!-->
