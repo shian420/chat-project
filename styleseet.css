@@ -19,6 +19,10 @@ time, mark, audio, video {
   background: transparent;
 }
 
+* {
+  font-family: system-ui,sans-serif;
+}
+
 .clear {
   clear: left;
 }
@@ -704,6 +708,61 @@ form .tweet-textbox textarea {
   }
   aside {
     display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 100%;
+    padding-right: 0px;
+  }
+  header h2 {
+    width: 550px;
+  }
+  .xx {
+    margin-right: 15px;
+  }
+  .tweet-form .form-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+  }
+  .tweet-form .form-right {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  .timeline-flex {
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+  .timeline-flex i {
+    margin-right: 110px;
+  }
+  .tweet-image {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .xx {
+    margin-right: 0;
+  }
+  header h2 {
+    width: auto;
+  }
+  .tweet-form {
+    display: none;
+  }
+  .timeline-flex {
+    padding-right: 10px;
+  }
+  .timeline-flex i {
+    margin-right: 70px;
+  }
+  .tweet-image {
+    height: 450px;
   }
 }
 
