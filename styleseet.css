@@ -582,7 +582,7 @@ form .tweet-textbox textarea {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .side-nav {
     width: 140px;
   }
@@ -591,7 +591,7 @@ form .tweet-textbox textarea {
   }
   .xx {
     float: none;
-    margin-top: 110px;
+    margin-top: 50px;
     margin-left: 15px;
   }
   main {
@@ -704,40 +704,6 @@ form .tweet-textbox textarea {
   }
   aside {
     display: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  body {
-    width: 750px;
-    padding-right: 0px;
-  }
-  header h2 {
-    width: 550px;
-  }
-  .xx {
-    margin-right: 15px;
-  }
-  .tweet-form .form-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 150px;
-  }
-  .tweet-form .form-right {
-    padding-right: 0;
-    padding-left: 0;
-    width: 100%;
-  }
-  .timeline-flex {
-    padding-left: 5px;
-    padding-right: 0;
-  }
-  .timeline-flex i {
-    margin-right: 110px;
-  }
-  .tweet-image {
-    margin-left: 0;
-    width: 100%;
   }
 }
 
