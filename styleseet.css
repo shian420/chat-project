@@ -424,6 +424,10 @@ form .tweet-textbox textarea {
   cursor: pointer;
 }
 
+.modal-header p:not(:first-of-type) {
+  display: none;
+}
+
 .modal-header img {
   width: 35px;
   height: 35px;
@@ -579,14 +583,127 @@ form .tweet-textbox textarea {
 }
 
 @media (max-width: 1100px) {
-  aside {
-    width: 400px;
+  .side-nav {
+    width: 140px;
+  }
+  .side-nav li {
+    margin-top: 16px;
+  }
+  .xx {
+    float: none;
+    margin-top: 110px;
+    margin-left: 15px;
+  }
+  main {
+    width: 100%;
+    padding-right: 16px;
+  }
+  header {
+    width: 100%;
   }
   header h2 {
-    width: 560px;
+    width: auto;
+    margin-left: 400px;
+    margin-top: 0;
   }
   header .search {
-    width: 280px;
+    display: none;
+  }
+  header .search .search-box {
+    display: none;
+  }
+  .modal-wrapper {
+    background-color: rgba(49, 49, 49, 0.8);
+  }
+  .modal-form {
+    background-color: black;
+    width: calc(100% - 190px);
+    height: calc(100vh - 100px);
+    max-height: 100vh;
+  }
+  .modal-header {
+    width: calc(100% - 190px);
+  }
+  .modal-header button {
+    display: none;
+    cursor: pointer;
+  }
+  .modal-header p {
+    margin: 15px 27px 15px 7px;
+    color: #62acf1;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .modal-header p:first-of-type {
+    display: none;
+  }
+  .modal-header p:nth-of-type(2) {
+    display: block;
+    float: right;
+    font-size: 19px;
+  }
+  .modal-header p:last-of-type {
+    display: block;
+    float: left;
+    font-size: 23px;
+  }
+  .modal-header img {
+    display: none;
+  }
+  .modal-flex {
+    height: calc(100% - 55px);
+  }
+  .modal-left {
+    width: 60px;
+    padding-left: 10px;
+    padding-top: 3px;
+    height: 85px;
+  }
+  .modal-right {
+    height: calc(100% - 110px);
+  }
+  .modal-right textarea {
+    height: calc(100% - 20px);
+    font-size: 27px;
+  }
+  .modal-right p {
+    font-size: 21px;
+  }
+  .modal-bottom i {
+    font-size: 30px;
+  }
+  .modal-header button {
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    float: right;
+    margin: 10px 25px 0px 10px;
+  }
+  .modal-bottom button {
+    display: none;
+  }
+  .tweet-form {
+    display: none;
+  }
+  .user-image {
+    width: 95px;
+    height: 80px;
+    margin-top: 25px;
+  }
+  .timeline-flex .username h3, .timeline-flex .username p {
+    font-size: 23px;
+  }
+  .timeline-flex p {
+    font-size: 23px;
+  }
+  .timeline-flex i {
+    margin-right: 70px;
+  }
+  .tweet-image {
+    height: 450px;
+  }
+  aside {
+    display: none;
   }
 }
 
@@ -594,12 +711,6 @@ form .tweet-textbox textarea {
   body {
     width: 750px;
     padding-right: 0px;
-  }
-  header .search {
-    display: none;
-  }
-  header .search .search-box {
-    display: none;
   }
   header h2 {
     width: 550px;
@@ -623,9 +734,6 @@ form .tweet-textbox textarea {
   }
   .timeline-flex i {
     margin-right: 110px;
-  }
-  aside {
-    display: none;
   }
   .tweet-image {
     margin-left: 0;

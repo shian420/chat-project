@@ -5,7 +5,7 @@ $(function(){
   $('#btn-large').click(function(){
     $('#mb-wrapper').css('display','inline');
   });
-  $('.modal-header img').click(function(){
+  $('.cancel').click(function(){
     $('#mb-wrapper').css('display','none');
   });
 
