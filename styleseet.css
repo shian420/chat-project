@@ -582,7 +582,7 @@ form .tweet-textbox textarea {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .side-nav {
     width: 140px;
   }
