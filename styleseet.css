@@ -589,6 +589,8 @@ form .tweet-textbox textarea {
 @media (max-width: 1100px) {
   .side-nav {
     width: 140px;
+    height: calc(100vh - 28px);
+    background-color: palevioletred;
   }
   .side-nav li {
     margin-top: 10px;
@@ -600,7 +602,11 @@ form .tweet-textbox textarea {
   }
   main {
     width: 100%;
+    height: calc(100vh - 60px);
     padding-right: 16px;
+  }
+  .main-scroll {
+    height: calc(100vh - 60px);
   }
   header {
     width: 100%;
