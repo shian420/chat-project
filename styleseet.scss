@@ -589,18 +589,16 @@ form .tweet-textbox textarea {
 /*タブレット用CSS*/
 @media (max-width: 1024px) {
   body{
-    height: calc(100vh - 100px);
-
+    height: 100vh;
     background-color: rgb(103, 205, 90);
-  }
-  .chat-wrapper{
-    height: calc(100vh - 100px);
-
   }
   .side-nav{
     width: 100px;
-    max-height: calc(100vh - 110px);
+    max-height: 100vh;
     background-color: palevioletred;
+    .fa-twitter{
+      margin-top: 40px;
+    }
     li{
       margin-top: 10px;
     }
@@ -612,11 +610,11 @@ form .tweet-textbox textarea {
   }
   main{
     width: 100%;
-    height: calc(100vh - 133px);
+    height: calc(100vh - 50px);
     padding-right: 16px;
   }
   .main-scroll{
-    height: calc(100vh - 133px);
+    height: calc(100vh - 50px);
     background-color: sandybrown;
   }
   
@@ -776,7 +774,7 @@ form .tweet-textbox textarea {
   }
 }
 
-@media(max-width: 800px){
+@media(max-width: 990px){
   main{
     background-color: royalblue;
   }
