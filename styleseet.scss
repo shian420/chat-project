@@ -513,7 +513,7 @@ form .tweet-textbox textarea {
 }
 
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .chat-wrapper {
     width: 100%;
   }
@@ -563,7 +563,7 @@ form .tweet-textbox textarea {
 }
 
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px)  {
   .side-nav {
     width: 100px;
   }
@@ -587,7 +587,7 @@ form .tweet-textbox textarea {
 }
 
 /*タブレット用CSS*/
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   body{
     height: 100vh;
   }
@@ -741,7 +741,7 @@ form .tweet-textbox textarea {
   }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   body {
     width: 100%;
     padding-right: 0px;
@@ -775,7 +775,7 @@ form .tweet-textbox textarea {
   }
 }
 
-@media screen and(max-width: 90%){
+@media screen and (max-width: 770px) {
   main{
     background-color: royalblue;
   }
@@ -797,7 +797,10 @@ form .tweet-textbox textarea {
 }
 
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px)  {
+  main{
+    background-color: seagreen;
+  }
   body {
     padding: 0;
     width: 100%;
@@ -833,7 +836,10 @@ form .tweet-textbox textarea {
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px)  {
+  main{
+    background-color: tomato;
+  }
   .chat-wrapper {
     width: 100%;
   }
@@ -863,7 +869,7 @@ form .tweet-textbox textarea {
   }
 }
 
-@media(max-width: 480px) {
+@media screen and (max-width: 480px)  {
   body{
     background-color: blue;
   }
@@ -871,8 +877,7 @@ form .tweet-textbox textarea {
     h3{
       font-size: 30px;
     }
-    p{
-    }
+  
   }
 }
 
