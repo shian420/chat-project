@@ -588,14 +588,10 @@ form .tweet-textbox textarea {
 
 /*タブレット用CSS*/
 @media (max-width: 1024px) {
-  html{
-    height: calc(100vh - 200px);
-
-  }
+  
   body{
-    height: calc(100vh - 200px);
 
-    background-color: slateblue;
+    background-color: rgb(103, 205, 90);
   }
   .chat-wrapper{
     height: calc(100vh - 200px);
