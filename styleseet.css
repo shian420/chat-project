@@ -594,10 +594,15 @@ form .tweet-textbox textarea {
   }
   .side-nav {
     width: 100px;
-    height: calc(100vh - 90px);
-    overflow-y: scroll;
   }
-  .side-nav li {
+  .side-nav .fa-twitter {
+    margin-top: 20px;
+    color: #5899d6;
+  }
+  .side-nav .nav-icons {
+    margin-top: 40px;
+  }
+  .side-nav .nav-icons li {
     margin-top: 10px;
   }
   .xx {

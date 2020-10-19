@@ -593,12 +593,17 @@ form .tweet-textbox textarea {
   }
   .side-nav{
     width: 100px;
-    height: calc(100vh - 90px);
-    overflow-y: scroll;
-    
+    .fa-twitter{
+      margin-top: 20px;
+      color:  #5899d6;
+    }
+    .nav-icons{
+      margin-top: 40px;
+       
     li{
       margin-top: 10px;
     }
+  }
   }
   .xx{
     float: none;
