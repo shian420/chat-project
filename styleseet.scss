@@ -586,9 +586,10 @@ form .tweet-textbox textarea {
   }
 }
 
-@media (max-width: 1100px) {
+/*タブレット用CSS*/
+@media (max-width: 1024px) {
   .side-nav{
-    width: 140px;
+    width: 100px;
     max-height: 100vh;
     background-color: palevioletred;
     li{
@@ -604,7 +605,6 @@ form .tweet-textbox textarea {
     width: 100%;
     height: calc(100vh - 32px);
     padding-right: 16px;
-    background-color: plum;
     border-bottom: solid 2px rgb(238, 255, 0);
   }
   .main-scroll{
@@ -765,7 +765,11 @@ form .tweet-textbox textarea {
     width: 100%;
   }
 }
-@media (max-width: 900px){
+
+@media(max-width: 800px){
+  main{
+    background-color: royalblue;
+  }
   .xx{
     margin-right: 0;
   }
@@ -781,10 +785,6 @@ form .tweet-textbox textarea {
       margin-right: 70px;
     }
   }
-  .tweet-image{
-    height: 450px;
-  }
-
 }
 
 
@@ -817,7 +817,6 @@ form .tweet-textbox textarea {
     display: inline-block;
     width: 130px;
     height: 35px;
-    float: right;
     margin: 10px 25px 0px 10px;
   }
   .modal-bottom button {
