@@ -611,6 +611,7 @@ form .tweet-textbox textarea {
     margin-left: 15px;
   }
   main {
+    margin-left: 70px;
     width: 100%;
     height: calc(100vh - 50px);
     padding-right: 16px;
@@ -761,6 +762,7 @@ form .tweet-textbox textarea {
   }
 }
 
+/*スマホ横持ち*/
 @media screen and (max-width: 770px) {
   main {
     background-color: royalblue;
@@ -854,6 +856,7 @@ form .tweet-textbox textarea {
   }
 }
 
+/*スマホ縦持ち*/
 @media screen and (max-width: 480px) {
   body {
     background-color: blue;
