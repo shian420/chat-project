@@ -24,6 +24,10 @@ time, mark, audio, video {
   font-family: system-ui,sans-serif;
 }
 
+.mb-height {
+  display: none;
+}
+
 .clear {
   clear: left;
 }
@@ -69,6 +73,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: black;
+}
+
+header .fa-twitter {
+  display: none;
 }
 
 header h2 {
@@ -156,6 +164,10 @@ header .search .search-box {
   width: 300px;
   max-height: 100vh;
   border-right: solid 2px #161616;
+}
+
+.nav-icons li:nth-of-type(3) {
+  display: none;
 }
 
 .side-nav .fa-twitter {
@@ -599,11 +611,11 @@ form .tweet-textbox textarea {
     margin-top: 20px;
     color: #5899d6;
   }
-  .side-nav .nav-icons {
-    margin-top: 40px;
+  .side-nav .nav-icons li:nth-of-type(2) {
+    display: none;
   }
-  .side-nav .nav-icons li {
-    margin-top: 10px;
+  .side-nav .nav-icons li:nth-of-type(3) {
+    display: inline-block;
   }
   .xx {
     float: none;
@@ -707,8 +719,8 @@ form .tweet-textbox textarea {
     display: none;
   }
   .user-image {
-    width: 95px;
-    height: 80px;
+    width: 75px;
+    height: 100px;
     margin-top: 25px;
   }
   .timeline-flex .username h3, .timeline-flex .username p {
@@ -763,15 +775,77 @@ form .tweet-textbox textarea {
 }
 
 /*スマホ横持ち*/
-@media screen and (max-width: 770px) {
-  main {
-    background-color: royalblue;
+@media screen and (max-width: 812px) {
+  .side-nav {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    overflow-y: none;
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    max-height: none;
+    border-right: none;
+  }
+  .side-nav .fa-twitter {
+    display: none;
+  }
+  .side-nav .nav-icons {
+    margin: 0;
+  }
+  .side-nav .nav-icons li {
+    margin-top: 10px;
+    width: 25%;
+    text-align: center;
+  }
+  .side-nav .nav-icons li div {
+    margin: 0;
+  }
+  .nav-icons li:nth-of-type(6) {
+    display: none;
+  }
+  .nav-icons li:nth-of-type(7) {
+    display: none;
+  }
+  .nav-icons li:nth-of-type(8) {
+    display: none;
+  }
+  .nav-icons li:nth-of-type(9) {
+    display: none;
   }
   .xx {
-    margin-right: 0;
+    display: none;
+  }
+  .side-nav li {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  main {
+    height: calc(100vh - 32px);
+    position: relative;
+    background-color: royalblue;
+    margin-left: 0;
+  }
+  main .mb-height {
+    position: absolute;
+    bottom: 45px;
+    right: 0;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .main-scroll {
+    height: calc(100vh - 40px);
   }
   header h2 {
-    width: auto;
+    display: none;
+  }
+  header .fa-twitter {
+    display: inline-block;
   }
   .tweet-form {
     display: none;
@@ -782,87 +856,8 @@ form .tweet-textbox textarea {
   .timeline-flex i {
     margin-right: 70px;
   }
-}
-
-@media screen and (max-width: 700px) {
-  main {
-    background-color: seagreen;
-  }
-  body {
-    padding: 0;
-    width: 100%;
-  }
-  .chat-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .side-nav .fa-twitter {
-    margin-left: 20px;
-  }
-  .side-nav li div {
-    margin-left: 0px;
-  }
-  .timeline-flex i {
-    margin-right: 60px;
-  }
-  .modal-form {
-    margin: 0;
-    width: 100%;
-  }
-  .modal-header {
-    width: 100%;
-  }
-  .modal-header button {
-    display: inline-block;
-    width: 130px;
-    height: 35px;
-    margin: 10px 25px 0px 10px;
-  }
-  .modal-bottom button {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  main {
-    background-color: tomato;
-  }
-  .chat-wrapper {
-    width: 100%;
-  }
-  .chat-container {
-    width: 100%;
-  }
-  .modal-header img {
-    margin-left: 20px;
-    margin-right: 0;
-  }
-  main {
-    width: 100%;
-  }
-  .timeline-flex {
-    padding-right: 20px;
-  }
-  .timeline-flex i {
-    margin-right: 50px;
-  }
-  .tweet-image {
-    overflow: hidden;
-    width: 100%;
-    height: 200px;
-  }
-  .tweet-form {
-    display: none;
-  }
-}
-
-/*スマホ縦持ち*/
-@media screen and (max-width: 480px) {
-  body {
-    background-color: blue;
-  }
-  .timeline-flex h3 {
-    font-size: 30px;
+  .user-image {
+    width: 120px;
   }
 }
 /*# sourceMappingURL=styleseet.css.map */
