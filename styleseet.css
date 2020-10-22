@@ -830,7 +830,7 @@ form .tweet-textbox textarea {
     margin-left: 0;
   }
   main .mb-height {
-    position: absolute;
+    position: fixed;
     bottom: 45px;
     right: 0;
     display: inline-block;
