@@ -836,8 +836,19 @@ form .tweet-textbox textarea {
     padding: 0;
     margin: 0 auto;
   }
+  body{
+    min-height: 100vh;
+    height: auto;
+  }
+  .chat-wrapper{
+    height: auto;
+  }
+  .chat-container{
+    height: auto;
+  }
   main{
-    height: calc(100vh - 32px);
+    padding-bottom: 50px;
+    height: auto;
     margin-left: 0;
     .mb-height{
       position: fixed;
@@ -848,7 +859,8 @@ form .tweet-textbox textarea {
     }
   }
   .main-scroll{
-    height: calc(100vh - 70px);
+    overflow-y: unset;
+    height: auto;
   }
   header h2 {
     display: none;
