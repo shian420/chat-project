@@ -487,13 +487,15 @@ form .tweet-textbox textarea {
 
 .modal-right textarea {
   width: 100%;
-  height: 170px;
+  height: 160px;
   background-color: black;
   color: white;
   font-size: 20px;
   padding: 7px 7px 7px 0;
   border: none;
   line-height: 24px;
+  margin-left: 8px;
+  margin-top: 10px;
 }
 
 .modal-right p {
@@ -662,10 +664,7 @@ form .tweet-textbox textarea {
     cursor: pointer;
   }
   .modal-header p {
-    margin: 15px 27px 15px 7px;
-    color: #62acf1;
-    font-weight: bold;
-    cursor: pointer;
+    margin-right: 0px;
   }
   .modal-header p:first-of-type {
     display: none;
@@ -678,7 +677,8 @@ form .tweet-textbox textarea {
   .modal-header p:last-of-type {
     display: block;
     float: left;
-    font-size: 23px;
+    font-size: 21px;
+    margin-left: 8px;
   }
   .modal-header img {
     display: none;
@@ -719,7 +719,7 @@ form .tweet-textbox textarea {
     display: none;
   }
   .user-image {
-    width: 75px;
+    width: 120px;
     height: 100px;
     margin-top: 25px;
   }
@@ -828,7 +828,6 @@ form .tweet-textbox textarea {
   main {
     height: calc(100vh - 32px);
     position: relative;
-    background-color: royalblue;
     margin-left: 0;
   }
   main .mb-height {
@@ -839,25 +838,71 @@ form .tweet-textbox textarea {
     margin-right: 10px;
   }
   .main-scroll {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 70px);
   }
   header h2 {
     display: none;
   }
   header .fa-twitter {
-    display: inline-block;
+    display: block;
+    color: #62acf1;
+    margin: 10px auto;
   }
   .tweet-form {
     display: none;
   }
+  .modal-form {
+    width: auto;
+    max-height: none;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  .modal-header {
+    width: 100%;
+    height: 55px;
+  }
   .timeline-flex {
-    padding-right: 10px;
+    padding-right: 30px;
   }
   .timeline-flex i {
     margin-right: 70px;
   }
   .user-image {
     width: 120px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .timeline-flex {
+    padding-right: 8px;
+  }
+  .timeline-flex .username h3 {
+    font-size: 21px;
+  }
+  .timeline-flex p {
+    font-size: 21px;
+  }
+  .timeline-flex i {
+    margin-right: 33px;
+  }
+  .tweet-image {
+    height: 170px;
+  }
+  .modal-header p:last-of-type {
+    display: none;
+  }
+  .modal-header img {
+    display: inline-block;
+  }
+  .user-image {
+    margin-top: 9px;
+    width: 80px;
+    height: 55px;
   }
 }
 /*# sourceMappingURL=styleseet.css.map */

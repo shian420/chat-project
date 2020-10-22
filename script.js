@@ -8,6 +8,9 @@ $(function(){
   $('.cancel').click(function(){
     $('#mb-wrapper').css('display','none');
   });
+  $('#mb-btn2').click(function(){
+    $('#mb-wrapper').css('display','inline');
+  });
 
 
 });
