@@ -827,7 +827,6 @@ form .tweet-textbox textarea {
   }
   main {
     height: calc(100vh - 32px);
-    position: relative;
     margin-left: 0;
   }
   main .mb-height {
