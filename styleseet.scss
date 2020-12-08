@@ -310,6 +310,7 @@ aside h2 {
 
 .fa-comment:hover {
   color: #3385d0;
+  font-size: 1.3rem;
 }
 
 .fa-retweet:hover {
@@ -318,6 +319,87 @@ aside h2 {
 
 .fa-heart:hover {
   color: crimson;
+}
+.favos{
+  display: flex;
+  width: 100%;
+}
+.favo-item{
+  width: 25%;
+}
+.like,.like2{
+  position: relative;
+  user-select: none;
+  margin: 0 auto;
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width:25% ;
+  height: 25px;
+  transition: background-color .6s ;
+}
+.like [type="checkbox"]{
+  display: none;
+}
+.like2 [type="checkbox"]{
+  display: none;
+}
+.heart{
+  position: relative;
+  top: 1px;
+  user-select: none;
+  font-size: 1.3rem;
+  color: gray;
+}
+.like [type="checkbox"]:checked~.heart{
+  animation: heart .5s forwards;
+}
+.like2 [type="checkbox"]:checked~.fa-retweet{
+  color: #33d05a;
+}
+
+@keyframes heart{
+  0%{
+    transform: scale(0);
+  }
+  20%{
+    color: white;
+
+  }
+  50%{
+    transform: scale(1.1);
+
+  }
+  100%{
+    transform: scale(1);
+    color: red;
+  }
+}
+
+.wa{
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  transform: scale(0);
+}
+.like [type="checkbox"]:checked~.wa{
+  animation: wa .9s forwards;
+}
+@keyframes wa{
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.4);
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
 .fa-download:hover {
