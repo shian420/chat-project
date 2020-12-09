@@ -31,21 +31,33 @@ var imageArr=[
   "./image/hhh.jpg"
 ];
 var flg=true;
+
 const pcbtn=document.getElementById('pc-btn');
 const inputs=document.getElementById('input_textarea');
 
-const mobilebtn=document.getElementById('mobilebtn');
+const mobilebtn=document.getElementsByClassName('modal-tweet');
 const mobilrtext=document.getElementById('mobilrtext');
 
-mobilebtn.addEventListener('click',()=>{
+
+mobilebtn[0].addEventListener('click',()=>{
+  mobiletweet();
+});
+
+mobilebtn[1].addEventListener('click',()=>{
+  mobiletweet();
+});
+
+//モバイルでの投稿関数
+function mobiletweet(){
   if(mobilrtext.value===""){
     return;
   }else{
     tweets(mobilrtext);
     mobilrtext.value="";
   }
-});
+}
 
+//パソコン版投稿関数
 pcbtn.addEventListener('click',()=>{
   if(inputs.value===""){
     return;
@@ -55,6 +67,7 @@ pcbtn.addEventListener('click',()=>{
   }
 });
 
+//ツイート生成関数
 function tweets(inputss){
 
 var i2=Math.floor(Math.random()*9);
@@ -77,22 +90,23 @@ const img2=document.createElement("img");
 timelineWp.className="timeline-wraper";
 userimage.className="user-image";
 img.className="iroha";
-img.src="./image/iroha.png";
+img.src="./image/新アイコン_LI.jpg";
 img.alt="画像";
 timelineflex.className="timeline-flex";
 username.className="username";
-username.innerHTML="い・ろ・は・す";
+username.innerHTML="シアン";
 userid.className="user-id";
-userid.innerHTML="@iroha416";
+userid.innerHTML="@shian420";
 p.innerHTML=inputss.value;
 tweetimage.className="tweet-image";
+
 tweetimage.dataset.image=imageArr[i2];
 tweetimage.dataset.title="おはよう";
 tweetimage.dataset.caption="はい";
 
 img2.className="oregairu";
 img2.src=imageArr[i2];
-img2.alt="画像";
+img2.alt="ツイート画像";
 
 
 //各タグ設置

@@ -81,7 +81,8 @@
 
 <div class="modal-header-fixed">
   <div class="modal-header">
-    <button type="button" id="mobilebtn" class="btn modal-tweet">ツイートする</button>
+    <!--上のモバイルボタン!-->
+    <button type="button" class="btn modal-tweet">ツイートする</button>
     <p>未送信ツイート</p>
     <p>下書き</p>
     <p class="cancel">キャンセル</p>
@@ -95,7 +96,7 @@
     <img src="./image/新アイコン_LI.jpg" alt="マイアイコン">
 </div>
 <div class="modal-right">
-  <textarea name="tweet" id="mobilrtext" placeholder="いまどうしてる？"></textarea>
+  <textarea name="tweet" id="mobilrtext"  maxlength="140" placeholder="いまどうしてる？"></textarea>
 <p>全てのアカウントが叩けます</p>
 <div class="modal-bottom">
   <i class="far fa-image"></i>
@@ -121,8 +122,7 @@
       </div>
       <div class="form-right">
       <div class="tweet-textbox">
-      <input type="text" id="input_name" name="name" placeholder="あなたの名前は？" >
-      <textarea id="input_textarea" name="tweet2" placeholder="いまどうしてる？"></textarea>
+      <textarea id="input_textarea" name="tweet2" placeholder="いまどうしてる？" maxlength="140"></textarea>
     </div>
     <div class="tw-items">
       <i class="far fa-image"></i>
@@ -272,6 +272,14 @@ data-caption="私がいない">
 
 </div><!--メインスクロールdiv!-->
   </main>
+
+  <!--画像表示テスト
+  <div class="image-view-fixed">
+    <div class="img-box">
+      <img class="img-big" src="./image/d.jpg">
+    </div>
+  </div>
+  ここまで!-->
 
   <aside>
     <div class="aside-scroll">

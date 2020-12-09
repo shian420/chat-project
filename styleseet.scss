@@ -117,6 +117,7 @@ header .search .search-box {
   color: white;
   border-radius: 0 100px 100px 0;
   border: none;
+  outline: none;
 }
 
 .chat-wrapper {
@@ -240,6 +241,7 @@ main:hover {
   height: 40px;
   margin-top: 20px;
   margin-right: 10px;
+  outline: none;
 }
 
 aside {
@@ -402,6 +404,38 @@ aside h2 {
   }
 }
 
+/*画像表示テスト*/
+
+.image-view-fixed{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  background-color: rgb(69, 79, 88);
+  z-index: 10;
+}
+.img-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  background-color: forestgreen;
+  object-fit: contain;
+}
+.img-big{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+width: 100%;
+  vertical-align: top;
+}
+/*ここまで*/
+
 .fa-download:hover {
   color: #3385d0;
 }
@@ -448,17 +482,6 @@ form .form-icon img {
      object-fit: cover;
 }
 
-form .tweet-textbox input[type="text"] {
-  width: 98%;
-  font-size: 18px;
-  border: none;
-  background-color: #161616;
-  color: white;
-  display: block;
-  height: 30px;
-  margin-top: 20px;
-}
-
 form .tweet-textbox textarea {
   width: 98%;
   font-size: 18px;
@@ -466,8 +489,9 @@ form .tweet-textbox textarea {
   background-color: #161616;
   color: white;
   display: block;
-  height: 30px;
+  height: 65px;
   margin-top: 20px;
+  outline: none;
 }
 
 .modal-wrapper {
@@ -507,6 +531,7 @@ form .tweet-textbox textarea {
 .modal-header button {
   display: none;
   cursor: pointer;
+  outline: none;
 }
 
 .modal-header p {
@@ -572,6 +597,7 @@ form .tweet-textbox textarea {
   line-height: 24px;
   margin-left: 8px;
   margin-top: 10px;
+  outline: none;
 }
 
 .modal-right p {
@@ -603,6 +629,7 @@ form .tweet-textbox textarea {
   width: 130px;
   height: 40px;
   border: none;
+  outline: none;
 }
 
 
